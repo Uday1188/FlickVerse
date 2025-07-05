@@ -1,0 +1,31 @@
+.movie-card {
+  transition: all 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.movie-img-container {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Fallback background */
+}
+
+.movie-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  background-color: white; /* For transparent PNGs */
+  padding: 5px; /* Add some spacing around the image */
+}
+
+.movie-card:hover .movie-img {
+  transform: scale(1.03);
+}
